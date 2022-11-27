@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pensionberegner</title>
+    <link rel="stylesheet" type="css" href="stil.css">
+    <script type="text/javascript" src="action.js" defer></script>
+</head>
+<body>
+    <h1>Pensionberegner</h1>
+    <div id="inputs">
+        <label for="indkomst">indkomst</label>
+        <input type="number" name="indkomst" id="indkomst">
+        <br>
+        <label for="pensionsindkomst">pensionsindkomst</label>
+        <input type="number" name="pensionsindkomst" id="pensionsindkomst">
+        <br>
+        <label for="Kapitalindkomst">Kapitalindkomst</label>
+        <input type="number" name="Kapitalindkomst" id="Kapitalindkomst">
+        <br>
+        <label for="friformue">friformue</label>
+        <input type="number" name="friformue" id="friformue">
+        <br>
+        <label for="civil">Gift/ugift/samlever</label>
+        <input type="radio" name="civil" id="civil" value="gift">
+        <input type="radio" name="civil" id="civil" value="ugift">
+        <input type="radio" name="civil" id="civil" value="samlever">
+        <br>
+        <br><br>
+
+        <button onclick="beregn()">Beregn pension</button>
+    </div>
+    <div id="outputs">
+        <table>
+            <tr>
+                <th>år</th>
+                <th>pension</th>
+            </tr>
+            <tr>
+                <td>2022</td>
+                <td id="beregnetPension"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

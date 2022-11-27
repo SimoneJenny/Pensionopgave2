@@ -1,0 +1,23 @@
+{
+  "name": "pensionberegner",
+  "version": "1.0.0",
+  "description": "Beregner pension ud fra tilgængelige oplysninger",
+  "main": "app.js",
+  "type": "module",
+  "proxy": "localhost:4444",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "pb"
+  },
+  "author": "Simone Jenny Kjær Hansen",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.0",
+    "request": "^2.88.2"
+  }
+}
